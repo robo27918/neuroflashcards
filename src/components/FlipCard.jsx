@@ -2,15 +2,14 @@ import React,{useState} from "react";
 import ReactCardFlip from "react-card-flip"
 
 /**
- * This is the card to hold the front (question)
- * and the back answer for the f
+ * This flipCard will be used to contain both the 
+ * front question and the back answer and this
+ * data will be passed into this component 
+ * as text props 
  * 
- * Also, these cards will be contained in another container
- * that will allow the user to go forward and backward 
- * to see the different set of cards
  */
 
-const FlipCard = ({front, back}) =>{
+const FlipCard = ({frontData, backData}) =>{
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleFlip = () =>{
@@ -22,14 +21,15 @@ const FlipCard = ({front, back}) =>{
             flipDirection={"horizontal"}
         >
             <div>
-                {front}
+                {frontData}
                 <button
                     className="FlipButton" onClick={handleFlip}
                 >See answer</button>
             </div>
 
             <div>
-                {back}
+                {}
+                {backData}
                 <button className="FlipButton" onClick={handleFlip}>See Question</button>
             </div>
         </ReactCardFlip>

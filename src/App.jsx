@@ -3,25 +3,17 @@
  * The cards component in turn will be responsible
  * for holding and rendering the individuals cards
  */
+import React from "react";
+import Cards from "./Cards";
 
-import { useState } from 'react'
-import './App.css'
-import Question from './components/Question'
-import FlipCard from './components/FlipCard'
-import Answer from './components/Answer'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-   <div>
-    <FlipCard 
-      front = {<Question question={"This is the question"}/>}
-      back ={<Answer answer={"this is the answer"}/>}
-    />
-
-        
-  
-   </div>
+    <div>
+      {/*This component will be in charge of rendering the deck of flash cards */}
+      <Cards /> 
+    </div>
   )
 }
 
