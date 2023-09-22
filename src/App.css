@@ -31,7 +31,7 @@ body{
     border-radius:var(--border-radius);
     margin:1em 5px;
     opacity:0.85;
-    transition: all 0.25s;
+    /*transition: all 0.25s;*/
     cursor:pointer;
 
 }
