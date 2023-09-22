@@ -6,18 +6,31 @@
  */
 import React from "react";
 //import Cards from "./Cards";
-import FlipCard from "./components/FlipCard";
-
+import CardDeck from "./components/CardDeck";
+const flashCards =[
+  {
+    id:1,
+    front:"question1",
+    back:"answer1"
+  },
+  {
+    id:2,
+    front:"question2",
+    back:"answer2"
+  },
+  {
+    id:3,
+    front:"question3",
+    back:"answer3"
+  }
+]
 function App() {
   
 
   return (
     <div>
       {/*This component will be in charge of rendering the deck of flash cards */}
-      <FlipCard 
-        frontData={"this is the front"}
-        backData={"this is the back data"}
-      /> 
+     <CardDeck cards={flashCards}/>
     </div>
   )
 }

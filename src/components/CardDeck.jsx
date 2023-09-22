@@ -7,13 +7,15 @@
  */
 import React, {useState, useEffect} from "react";
 import FlipCard from "./FlipCard";
-const dummyData = {
-    
-}
-const CardDeck = () =>{
-    const [cardData, setCardData] = useState ([]);
 
-    const cards = cardData.map((card) => {
+const CardDeck = ({cards}) =>{
+    const [cardData, setCardData] = useState (cards);
+    
+    //setting the cardData passed in via props
+    //
+    console.log("printing cardData", cardData)
+    
+    const Fcards = cardData.map((card) => {
         return <FlipCard 
                 frontData={card.front} 
                 backData={card.back} 
@@ -28,16 +30,18 @@ const CardDeck = () =>{
     const nextCard = () => {
         setCurrent(current +1);
     }
+
+    console.log("print Fcards", Fcards)
     return (
         <div>
             {/* card number */}
             <div className="cardNumber">
-                Card {current+1} of {cards.length}
+                Card {current+1} of {Fcards.length}
             </div>
             {/* card number */}
 
             {/*render the cards */}
-                {cards[current]}
+                {Fcards[current]}
             {/*render the cards */}
 
             {/*render navigation*/}
@@ -47,7 +51,8 @@ const CardDeck = () =>{
 
             </div>
             {/*render navigation*/}
-            
+
         </div>
     );
 }
+export default CardDeck;

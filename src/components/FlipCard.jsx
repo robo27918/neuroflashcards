@@ -28,7 +28,7 @@ const FlipCard = ({frontData, backData}) =>{
             </div>
 
             <div>
-                {}
+                
                 {backData}
                 <button className="FlipButton" onClick={handleFlip}>See Question</button>
             </div>
