@@ -7,6 +7,8 @@
 import React from "react";
 //import Cards from "./Cards";
 import CardDeck from "./components/CardDeck";
+import "./App.css"
+
 const flashCards =[
   {
     id:1,

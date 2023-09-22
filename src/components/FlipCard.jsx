@@ -16,6 +16,7 @@ const FlipCard = ({frontData, backData}) =>{
         setIsFlipped((prevIsFlipped) => !prevIsFlipped) 
     };
     return(
+        <div className="card">
         <ReactCardFlip 
             isFlipped={isFlipped}
             flipDirection={"horizontal"}
@@ -33,6 +34,7 @@ const FlipCard = ({frontData, backData}) =>{
                 <button className="FlipButton" onClick={handleFlip}>See Question</button>
             </div>
         </ReactCardFlip>
+        </div>
 
     );
 }
