@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comissioner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
 
 :root{
     --fontFamily:"Comissioner",sans-serif;
@@ -49,3 +49,4 @@ body{
     display:flex;
     justify-content: center;
 }
+
