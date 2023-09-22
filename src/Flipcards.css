@@ -1,8 +1,9 @@
 .card{
+    padding:25px;
     margin:10px auto;
     background:var(--grad-one);
-    height: 600px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +31,16 @@
     opacity:0.85;
     transition: all 0.25s;
     cursor:pointer;
-    /**position button at top right corner*/
-    position:absolute;
-    top:180px;
-    right:0px
+ 
 
+}
+.answerButton{
+    position:absolute;
+    top:200px;
+    right:200px
+}
+.questionButton{
+    position:absolute;
+    top:200px;
+    right:0px
 }

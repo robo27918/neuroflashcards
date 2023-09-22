@@ -26,10 +26,14 @@ const CardDeck = ({cards}) =>{
     //navigation for cards
     const [current, setCurrent] = useState(0);
     const  previousCard = ()=>{
-        setCurrent(current -1)
+        if (current > 0){
+            setCurrent(current -1)
+        }
     }
     const nextCard = () => {
-        setCurrent(current +1);
+        if (current < Fcards.length-1){
+            setCurrent(current +1);
+        }
     }
 
     console.log("print Fcards", Fcards)

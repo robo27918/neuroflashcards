@@ -23,15 +23,22 @@ const FlipCard = ({frontData, backData}) =>{
         >
             <div>
                 {frontData}
-                <button
-                     onClick={handleFlip}
-                >See answer</button>
+                <div className="answerButton">
+                    <button
+                        onClick={handleFlip}
+                    >See answer</button>
+                </div>
             </div>
 
             <div>
                 
                 {backData}
-                <button className="FlipButton" onClick={handleFlip}>See Question</button>
+                <div className="questionButton">
+                    <button
+                        onClick={handleFlip}
+                    >See Question</button>
+                </div>
+                
             </div>
         </ReactCardFlip>
         </div>
