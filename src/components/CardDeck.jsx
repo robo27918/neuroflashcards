@@ -7,7 +7,7 @@
  */
 import React, {useState, useEffect} from "react";
 import FlipCard from "./FlipCard";
-import "../FlipCards.css"
+import "./FlipCards.css"
 const CardDeck = ({cards}) =>{
     // the setCardData method will be handy later when we request data from an actual server...
     const [cardData, setCardData] = useState (cards);
