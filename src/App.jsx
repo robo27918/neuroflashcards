@@ -9,8 +9,7 @@ import brainAnatomyFlashcards from "./cardData";
 import CardDeck from "./components/CardDeck";
 import "./App.css";
 
-// importing routing tools for page navigationn
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 function App() {
   

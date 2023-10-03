@@ -44,3 +44,13 @@
     top:200px;
     right:0px
 }
+
+#wrong{
+    border:2px solid red;
+}
+#right{
+    border:2px solid green;
+}
+#wait{
+    border:2px solid grey;
+}

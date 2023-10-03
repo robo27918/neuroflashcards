@@ -7,13 +7,16 @@
  */
 import React, {useState, useEffect} from "react";
 import FlipCard from "./FlipCard";
+import GuessForm from "./GuessForm";
 import "./Flipcards.css"
 const CardDeck = ({cards}) =>{
     // the setCardData method will be handy later when we request data from an actual server...
     const [cardData, setCardData] = useState (cards);
+    // need a variable to hold the correct answer (ie. backside)
+    const[correctBackside, setBackside] = useState('');
     
-    //setting the cardData passed in via props
-    //
+    //variable to wait for users textfield guess and then change color accordingly
+    const[userGuess, setUserGuess] = useState("wait");
     console.log("printing cardData", cardData)
     
     const Fcards = cardData.map((card) => {
@@ -35,7 +38,8 @@ const CardDeck = ({cards}) =>{
             setCurrent(current +1);
         }
     }
-
+    //function to check if textfield guess is correct
+    
     console.log("print Fcards", Fcards)
     return (
         <div>
@@ -56,7 +60,10 @@ const CardDeck = ({cards}) =>{
 
             </div>
             {/*render navigation*/}
-
+           
+           {/*render guess form*/}
+            <GuessForm guess={"wait"} correctAnswer={cardData[current].back}/>
+           {/*end of render guess form*/}
         </div>
     );
 }
