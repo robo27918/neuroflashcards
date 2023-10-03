@@ -1,34 +1,34 @@
-# Web Development Project 2 - *Brain Flash cards*
+# Web Development Project 3 - *Basic Brain Flashcards*
 
-Submitted by: **Roberto S Toribio**
+Submitted by: **Roberto Toribio**
 
-This web app: **https://robs-flash-cards.netlify.app/**
+This web app: **A simple flash card game with 10 cards regarding brain questions**
 
-Time spent: **6** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [X] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [X] **A list of card pairs is created**
-- [X] **Clicking on the card shows the corresponding component of the information pair**
-- [X] **Clicking the next button displays a random new card**
+- [X] **The user can enter their guess in a box before seeing the flipside of the card**
+- [X] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [X] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [X] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-- [] *visual style implemented*
+- [ ] A shuffle button is used to randomize the order of the cards
+- [X] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
-* [X] Hosted the app via netlify so anybody with a link can access it
+* [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -41,14 +41,13 @@ GIF created with ...
 
 ## Notes
 
-I used two components,CardDeck and FlipCard, to make my life easier. FlipCard was used to store data pertaining to one
-particular card. CardDeck was used to render the entire deck of cards. In the future I want to allow anyone 
-that visits the site to easily add more flash cards. I plan on placing a hamburger menu on the left and allowing 
-the user to navigate to another Link where the can add additonal cards. I plan on using React-router to do this.
+The most interesting part here was creating a component for the Form element
+I think this made checking the users guess with the actual answer of the flip card
+really easy. It also made change the color around the border of the text field easy.
 
 ## License
 
-    Copyright [2023] [Roberto S. Toribio]
+    Copyright [2023] [Roberto Toribio]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
